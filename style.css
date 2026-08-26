@@ -16,33 +16,37 @@
   --page-outer: #d68fa8;
 }
 
+/* 1. Ganti height jadi 100dvh dan matikan scroll yang tidak perlu */
 html, body {
-  height: 100%;
+  height: 100dvh;
   background: var(--page-outer);
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden; 
 }
 
+/* 2. Tambahkan align-items agar posisi layar selalu di tengah (vertikal) */
 body {
   font-family: "Pixelify Sans", system-ui, sans-serif;
   display: flex;
   justify-content: center;
-  min-height: 100%;
+  align-items: center; /* Tambahan baru */
+  min-height: 100dvh;
 }
 
-/* Phone-sized canvas. Locked to the 412x892 design ratio,
-   scales down gracefully on narrower viewports, stays centered
-   with a soft outer background on wider ones. */
+/* 3. Ini Kunci Utamanya: Tambahkan max-height dan aspect-ratio */
 .phone {
-  width: 412px;
-  max-width: 100vw;
+  width: 100%;
+  max-width: 412px;
+  max-height: 100dvh; /* Mencegah layar terpotong ke bawah */
+  aspect-ratio: 412 / 892; /* Memaksa isi web mengecil proporsional */
   background: var(--page-outer);
   overflow: hidden;
 }
 
+/* 4. Pastikan screen mengikuti ukuran phone */
 .screen {
   position: relative;
   width: 100%;
+  height: 100%;
   aspect-ratio: 412 / 892;
   overflow: hidden;
 }
