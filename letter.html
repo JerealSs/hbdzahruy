@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Kenapa Kamu? 💌</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="letter.css">
+</head>
+<body>
+
+  <main class="phone">
+    <section class="screen letter-screen" id="letter-screen">
+      <img class="bg" src="assets/letter/bg.png" alt="">
+
+      <!-- ===== COVER ===== -->
+      <div class="cover" id="cover">
+        <div class="cover-card">
+          <img class="cover-deco" src="assets/letter/rose.png" alt="">
+          <p class="cover-kicker">sebuah catatan yang bernama</p>
+          <h1 class="cover-title">Kenapa<br>Kamu?</h1>
+          <p class="cover-tap">pencet disini sayangg✦</p>
+        </div>
+      </div>
+
+      <!-- ===== BOOK ===== -->
+      <div class="book" id="book" hidden>
+        <div class="page-stage" id="page-stage">
+          <!-- halaman-halaman di-inject lewat JS -->
+        </div>
+
+        <button class="flip-zone flip-left" id="flip-prev" aria-label="Halaman sebelumnya"></button>
+        <button class="flip-zone flip-right" id="flip-next" aria-label="Halaman berikutnya"></button>
+
+        <div class="flip-controls">
+          <button class="flip-btn flip-btn-prev" id="flip-prev-btn" aria-label="Halaman sebelumnya">‹</button>
+          <div class="page-indicator" id="page-indicator">1 / 1</div>
+          <button class="flip-btn flip-btn-next" id="flip-next-btn" aria-label="Halaman berikutnya">›</button>
+        </div>
+      </div>
+
+      <!-- navigasi antar section -->
+      <button class="nav-arrow prev-arrow" id="prev-page" aria-label="Halaman sebelumnya">‹</button>
+      <button class="nav-arrow next-arrow" id="next-page" aria-label="Halaman selanjutnya">›</button>
+    </section>
+  </main>
+
+<script src="letter.js"></script>
+</body>
+</html>

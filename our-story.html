@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Our Story 💞</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="our-story.css">
+</head>
+<body>
+
+  <main class="phone">
+    <section class="screen story-screen" id="story-screen">
+      <img class="bg" src="assets/Our Story/bg.png" alt="">
+
+      <!-- garis-garis panah flowchart, digambar di bawah kotak -->
+      <svg class="flow-lines" id="flow-lines" viewBox="0 0 412 845" preserveAspectRatio="none">
+        <defs>
+          <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="4.5" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#4a2f37"/>
+          </marker>
+        </defs>
+        <!-- path tiap edge, id sesuai target box, muncul saat box target diklik -->
+        <path id="edge-start-2" class="edge" d=""></path>
+        <path id="edge-start-3" class="edge" d=""></path>
+        <path id="edge-2-4"     class="edge" d=""></path>
+        <path id="edge-3-5"     class="edge" d=""></path>
+        <path id="edge-4-6"     class="edge" d=""></path>
+        <path id="edge-5-7"     class="edge" d=""></path>
+        <path id="edge-6-8"     class="edge" d=""></path>
+        <path id="edge-7-8"     class="edge" d=""></path>
+        <path id="edge-8-end"   class="edge" d=""></path>
+      </svg>
+
+      <!-- judul -->
+      <div class="title-wrap">
+        <img class="title-bubble" src="assets/Our Story/title-bubble.png" alt="">
+        <p class="title-text">Our Story Into<br>Flowchart</p>
+      </div>
+
+      <!-- START -->
+      <div class="node start-node">
+        <img class="node-bg" src="assets/Our Story/start-end-btn.png" alt="">
+        <p class="node-label">START</p>
+      </div>
+
+      <!-- 7 kotak cerita -->
+      <button class="story-box" id="box2" data-box="2" style="--bx:15.06%; --by:31.73%; --bw:27.17%; --bh:9.13%;">
+        <img class="node-bg" src="assets/Our Story/story-box.png" alt="">
+        <p class="box-label">Ketemu pas SMP<br>(2017)</p>
+      </button>
+
+      <button class="story-box" id="box3" data-box="3" style="--bx:56.75%; --by:31.73%; --bw:27.17%; --bh:9.13%;">
+        <img class="node-bg" src="assets/Our Story/story-box.png" alt="">
+        <p class="box-label">Chatton pertama<br>(2020)</p>
+      </button>
+
+      <button class="story-box" id="box4" data-box="4" style="--bx:15.06%; --by:43.39%; --bw:27.17%; --bh:9.13%;">
+        <img class="node-bg" src="assets/Our Story/story-box.png" alt="">
+        <p class="box-label">Konflik Gelang<br>(2023)</p>
+      </button>
+
+      <button class="story-box" id="box5" data-box="5" style="--bx:56.75%; --by:43.39%; --bw:27.17%; --bh:9.13%;">
+        <img class="node-bg" src="assets/Our Story/story-box.png" alt="">
+        <p class="box-label">Konflik Gelang 2<br>(2024)</p>
+      </button>
+
+      <button class="story-box" id="box6" data-box="6" style="--bx:15.06%; --by:56.00%; --bw:27.17%; --bh:9.13%;">
+        <img class="node-bg" src="assets/Our Story/story-box.png" alt="">
+        <p class="box-label">Chatton Lagi<br>(19 Des 25)</p>
+      </button>
+
+      <button class="story-box" id="box7" data-box="7" style="--bx:56.75%; --by:56.00%; --bw:27.17%; --bh:9.13%;">
+        <img class="node-bg" src="assets/Our Story/story-box.png" alt="">
+        <p class="box-label">Akhirnya Ketemuan<br>(3 Jan 26)</p>
+      </button>
+
+      <button class="story-box" id="box8" data-box="8" style="--bx:35.87%; --by:66.45%; --bw:27.17%; --bh:9.13%;">
+        <img class="node-bg" src="assets/Our Story/story-box.png" alt="">
+        <p class="box-label">Jadian<br>(5 Jan 26)</p>
+      </button>
+
+      <!-- END -->
+      <div class="node end-node">
+        <img class="node-bg" src="assets/Our Story/start-end-btn.png" alt="">
+        <p class="node-label">END</p>
+      </div>
+
+      <!-- navigasi antar halaman -->
+      <button class="nav-arrow prev-arrow" id="prev-page" aria-label="Halaman sebelumnya">
+        <img src="assets/Our Story/arrow-prev.png" alt="">
+      </button>
+      <button class="nav-arrow next-arrow" id="next-page" aria-label="Halaman selanjutnya">
+        <img src="assets/Our Story/arrow-next.png" alt="">
+      </button>
+    </section>
+  </main>
+
+<script src="our-story.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Gallery 📸</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  <main class="phone">
+    <section class="screen gallery-screen" id="gallery-screen">
+      <!-- Background -->
+      <img class="bg" src="assets/gallery/bg.png" alt="">
+
+      <!-- Ornamen Bunga Atas Kanan -->
+      <img class="deco-branch" src="assets/gallery/batang daun.png" alt="">
+      
+      <!-- Judul Kupu-Kupu -->
+      <div class="title-wrap">
+        <img class="title-bubble" src="assets/gallery/title-top.png" alt="">
+        <p class="title-text">Foto Kamu yang<br>Cantik</p>
+      </div>
+
+<!-- Navigasi antar halaman -->
+      <button class="nav-arrow prev-arrow" id="prev-page" aria-label="Halaman sebelumnya">
+        <img src="assets/gallery/arrow-red.png" alt="">
+      </button>
+      
+      <!-- Ornamen Kucing -->
+      <img class="deco-cat" src="assets/gallery/cat.png" alt="">
+      
+      <button class="nav-arrow next-arrow" id="next-page" aria-label="Halaman selanjutnya">
+        <img src="assets/gallery/arrow-green.png" alt="">
+      </button>
+
+      <!-- Area Foto Polaroid -->
+      <div class="gallery-wrapper">
+        <!-- Foto-foto (geser otomatis) -->
+        <div class="photo-carousel" id="photo-carousel">
+          <img class="carousel-photo" src="assets/gallery/photo1.jpg" alt="Foto 1">
+          <img class="carousel-photo" src="assets/gallery/photo2.jpg" alt="Foto 2">
+          <img class="carousel-photo" src="assets/gallery/photo3.jpg" alt="Foto 3">
+          <img class="carousel-photo" src="assets/gallery/photo4.jpg" alt="Foto 4">
+          <img class="carousel-photo" src="assets/gallery/photo5.jpg" alt="Foto 5">
+          <img class="carousel-photo" src="assets/gallery/photo6.jpg" alt="Foto 6">
+          <img class="carousel-photo" src="assets/gallery/photo7.jpg" alt="Foto 7">
+          <img class="carousel-photo" src="assets/gallery/photo8.jpg" alt="Foto 8">
+          <img class="carousel-photo" src="assets/gallery/photo9.jpg" alt="Foto 9">
+          <img class="carousel-photo" src="assets/gallery/photo10.jpg" alt="Foto 10">
+        </div>
+        <!-- Bingkai polaroid -->
+        <img class="border-frame" src="assets/gallery/border.png" alt="">
+        <!-- Titik penanda foto ke berapa -->
+        <div class="carousel-dots" id="carousel-dots"></div>
+      </div>
+
+      <!-- Ornamen Bawah (Teratai & Tulip) -->
+      <img class="deco-lotus" src="assets/gallery/bottom-lotus.png" alt="">
+      <img class="deco-tulips left" src="assets/gallery/sakura-bl.png" alt="">
+      <!-- Tulip kanan kita flip sedikit agar simetris dengan desain -->
+      <img class="deco-tulips right" src="assets/gallery/sakura-bl.png" alt="">
+
+    </section>
+  </main>
+
+<script src="gallery.js"></script>
+</body>
+</html>
