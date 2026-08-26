@@ -37,21 +37,24 @@ body {
 }
 
 /* Kunci Utama Anti-Kepotong */
+/* Ganti .phone dan .screen menjadi ini */
+
 .phone {
-  /* Rumus ini menjamin lebar akan selalu mengecil mengikuti tinggi layar */
-  width: min(100vw, 100dvh * (412 / 892), 412px);
-  aspect-ratio: 412 / 892;
+  width: 100%;         /* Biarkan melebar 100% mengisi layar HP */
+  height: 100dvh;      /* Biarkan tingginya pas dengan layar HP */
+  max-width: 450px;    /* Batas aman kalau dibuka di Laptop agar tidak raksasa */
   background: var(--page-outer);
   overflow: hidden;
   position: relative;
+  /* aspect-ratio kita hapus total dari sini */
 }
 
-/* Screen cukup menyesuaikan container phone 100% */
 .screen {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
+  /* aspect-ratio juga kita hapus dari sini */
   overflow: hidden;
 }
 
