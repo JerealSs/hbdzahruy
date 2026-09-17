@@ -59,7 +59,7 @@
   font-family: "Pixellari", monospace;
   font-weight: 700;
   color: #2a1a1a;
-  font-size: clamp(16px, 4.5vw, 19px);
+  font-size: clamp(15px, 3.5vw, 18px);
   line-height: 1.25;
   text-align: left;
 }
