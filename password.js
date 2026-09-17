@@ -1,7 +1,7 @@
 // ====== GANTI DI SINI ======
 // Jawaban yang benar (boleh diisi angka saja, contoh tanggal jadian: "14022023")
 // Sistem otomatis akan mengabaikan simbol "/", "-", spasi saat mengecek jawaban user.
-const CORRECT_ANSWER = "050126";
+const CORRECT_ANSWER = "180904";
 // Halaman tujuan setelah password benar
 const NEXT_PAGE = "opening.html";
 // ============================
